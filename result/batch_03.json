@@ -1,0 +1,122 @@
+[
+  {
+    "id": "aider-chat",
+    "name": "Aider",
+    "slogan": "AI pair programming in your terminal.",
+    "description": "A command line tool that lets you pair program with GPT-3.5/GPT-4o/Claude 3.5. Edits code in your local git repo.",
+    "metrics": { "reasoning": 94, "creativity": 75, "speed": 95 },
+    "stats": { "wins": 1800, "losses": 30, "elo": 2100 },
+    "connectivity": { "try_url": "https://aider.chat/", "iframe_safe": true },
+    "tags": ["CLI", "GIT", "CODING", "LOCAL"],
+    "category": "CODING",
+    "video_poster": "https://images.unsplash.com/photo-1618401471353-b98afee0b2eb?q=80&w=600&auto=format&fit=crop"
+  },
+  {
+    "id": "continue-dev",
+    "name": "Continue",
+    "slogan": "The open source autopilot for VS Code.",
+    "description": "An open-source autopilot for software development that brings the power of LLMs to your IDE.",
+    "metrics": { "reasoning": 90, "creativity": 80, "speed": 92 },
+    "stats": { "wins": 1400, "losses": 50, "elo": 2050 },
+    "connectivity": { "try_url": "https://continue.dev/", "iframe_safe": true },
+    "tags": ["IDE", "OPEN_SOURCE", "VSCODE", "EXTENSION"],
+    "category": "CODING",
+    "video_poster": "https://images.unsplash.com/photo-1555066931-4365d14bab8c?q=80&w=600&auto=format&fit=crop"
+  },
+  {
+    "id": "codeium-ai",
+    "name": "Codeium",
+    "slogan": "Free AI code completion & chat.",
+    "description": "A free AI-powered code acceleration toolkit. Offers autocomplete, chat, and search capabilities for developers.",
+    "metrics": { "reasoning": 88, "creativity": 78, "speed": 98 },
+    "stats": { "wins": 2000, "losses": 80, "elo": 2000 },
+    "connectivity": { "try_url": "https://codeium.com/", "iframe_safe": true },
+    "tags": ["FREE", "AUTOCOMPLETE", "FAST"],
+    "category": "CODING",
+    "video_poster": "https://images.unsplash.com/photo-1542831371-29b0f74f9713?q=80&w=600&auto=format&fit=crop"
+  },
+  {
+    "id": "tabby-ml",
+    "name": "Tabby",
+    "slogan": "Self-hosted AI coding assistant.",
+    "description": "An open-source, self-hosted AI coding assistant. Allows you to run your own coding model for privacy and control.",
+    "metrics": { "reasoning": 85, "creativity": 70, "speed": 90 },
+    "stats": { "wins": 600, "losses": 20, "elo": 1900 },
+    "connectivity": { "try_url": "https://tabbyml.com/", "iframe_safe": true },
+    "tags": ["SELF_HOSTED", "PRIVACY", "OPEN_SOURCE"],
+    "category": "CODING",
+    "video_poster": "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?q=80&w=600&auto=format&fit=crop"
+  },
+  {
+    "id": "cody-sourcegraph",
+    "name": "Cody",
+    "slogan": "Code with context.",
+    "description": "Sourcegraph's AI coding assistant that uses your entire codebase as context to answer questions and write code.",
+    "metrics": { "reasoning": 92, "creativity": 82, "speed": 88 },
+    "stats": { "wins": 1100, "losses": 30, "elo": 2080 },
+    "connectivity": { "try_url": "https://sourcegraph.com/cody", "iframe_safe": true },
+    "tags": ["CONTEXT_AWARE", "ENTERPRISE", "SEARCH"],
+    "category": "CODING",
+    "video_poster": "https://images.unsplash.com/photo-1550439062-609e1531270e?q=80&w=600&auto=format&fit=crop"
+  },
+  {
+    "id": "lm-studio",
+    "name": "LM Studio",
+    "slogan": "Discover, download, and run local LLMs.",
+    "description": "An easy-to-use desktop application for experimenting with local LLMs on your laptop. Supports GGUF format.",
+    "metrics": { "reasoning": 85, "creativity": 80, "speed": 90 },
+    "stats": { "wins": 1800, "losses": 40, "elo": 1950 },
+    "connectivity": { "try_url": "https://lmstudio.ai/", "iframe_safe": true },
+    "tags": ["LOCAL", "DESKTOP", "GGUF"],
+    "category": "SECURITY",
+    "video_poster": "https://images.unsplash.com/photo-1591453089816-0fbb971b454c?q=80&w=600&auto=format&fit=crop"
+  },
+  {
+    "id": "gpt4all-nomic",
+    "name": "GPT4All",
+    "slogan": "Open-source chatbots that run everywhere.",
+    "description": "A free-to-use, locally running, privacy-aware chatbot. No GPU or internet required.",
+    "metrics": { "reasoning": 80, "creativity": 75, "speed": 95 },
+    "stats": { "wins": 2200, "losses": 60, "elo": 1880 },
+    "connectivity": { "try_url": "https://gpt4all.io/", "iframe_safe": true },
+    "tags": ["CPU", "PRIVACY", "CONSUMER"],
+    "category": "SECURITY",
+    "video_poster": "https://images.unsplash.com/photo-1605810230434-7631ac76ec81?q=80&w=600&auto=format&fit=crop"
+  },
+  {
+    "id": "local-ai",
+    "name": "LocalAI",
+    "slogan": "The OpenAI-compatible local AI API.",
+    "description": "Self-hosted, community-driven, local OpenAI-compatible API. Acts as a drop-in replacement for OpenAI.",
+    "metrics": { "reasoning": 82, "creativity": 78, "speed": 85 },
+    "stats": { "wins": 900, "losses": 35, "elo": 1920 },
+    "connectivity": { "try_url": "https://localai.io/", "iframe_safe": true },
+    "tags": ["API", "SELF_HOSTED", "DROP_IN"],
+    "category": "CODING",
+    "video_poster": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=600&auto=format&fit=crop"
+  },
+  {
+    "id": "oobabooga",
+    "name": "TextGen WebUI",
+    "slogan": "A Gradio web UI for LLMs.",
+    "description": "The 'Stable Diffusion WebUI' of text generation. Supports a vast array of model loaders and extensions.",
+    "metrics": { "reasoning": 88, "creativity": 85, "speed": 80 },
+    "stats": { "wins": 3000, "losses": 50, "elo": 1980 },
+    "connectivity": { "try_url": "https://github.com/oobabooga/text-generation-webui", "iframe_safe": false },
+    "tags": ["UI", "EXTENSIONS", "ADVANCED"],
+    "category": "TEXT_GEN",
+    "video_poster": "https://images.unsplash.com/photo-1516116216624-53e697fedbea?q=80&w=600&auto=format&fit=crop"
+  },
+  {
+    "id": "vllm-project",
+    "name": "vLLM",
+    "slogan": "Easy, fast, and cheap LLM serving.",
+    "description": "A high-throughput and memory-efficient LLM serving engine. Uses PagedAttention for massive speedups.",
+    "metrics": { "reasoning": 90, "creativity": 80, "speed": 100 },
+    "stats": { "wins": 800, "losses": 10, "elo": 2050 },
+    "connectivity": { "try_url": "https://vllm.ai/", "iframe_safe": true },
+    "tags": ["SERVING", "FAST", "INFRASTRUCTURE"],
+    "category": "CODING",
+    "video_poster": "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?q=80&w=600&auto=format&fit=crop"
+  }
+]

@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>YouAgent | Decentralized AI Discovery</title>
+    
+    <!-- ⚡ PERFORMANCE: Critical Resource Hints -->
+    <link rel="preconnect" href="https://cache.roforhy.workers.dev" crossorigin />
+    <link rel="dns-prefetch" href="https://cache.roforhy.workers.dev" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://images.unsplash.com" />
+
+    <!-- 🚀 PERFORMANCE: Data Fast-Track (Parallel Fetching) -->
+    <script>
+      // Protocol V15.0: Edge-First Data Loading
+      // Initiates fetch immediately before React even boots
+      window.__INITIAL_DATA__ = Promise.resolve(null);
+    </script>
+    
+    <!-- Fonts: Space Mono (Data) & Orbitron (Headers) -->
+    <!-- 🅰️ Protocol V20.0: Font Display Swap Strategy to prevent invisible text -->
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400&family=Orbitron:wght@400;700;900&display=swap" rel="stylesheet">
+    
+    <!-- Tailwind -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        mono: ['Space Mono', 'monospace'],
+                        display: ['Orbitron', 'sans-serif'],
+                    },
+                    colors: {
+                        matrix: {
+                            green: '#00FF41',
+                            cyan: '#00F0FF',
+                            lime: '#CCFF00',
+                            dark: '#0D2B12',
+                            black: '#000000'
+                        }
+                    },
+                    animation: {
+                        'flicker': 'flicker 0.15s infinite',
+                        'spin-slow': 'spin 10s linear infinite',
+                        'pulse-fast': 'pulse 1s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+                    },
+                    keyframes: {
+                        flicker: {
+                            '0%': { opacity: '0.97' },
+                            '100%': { opacity: '1' }
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        body {
+            background-color: #000;
+            color: #00FF41;
+            overflow: hidden; 
+        }
+
+        /* --- Protocol V18.0: Stealth Rails (Global Scrollbar Overrides) --- */
+
+        /* 1. The Track (轨道) - Make it invisible or deeply dark */
+        ::-webkit-scrollbar {
+            width: 6px;  /* Vertical scrollbar width: Ultra slim */
+            height: 6px; /* Horizontal scrollbar height */
+        }
+
+        ::-webkit-scrollbar-track {
+            background: transparent; /* Seamless blend */
+        }
+
+        /* 2. The Thumb (滑块) - Neon Green Tech Pill */
+        ::-webkit-scrollbar-thumb {
+            background: rgba(34, 197, 94, 0.4); /* green-500 with opacity */
+            border-radius: 3px; /* Soft tech roundness */
+            transition: all 0.3s ease;
+        }
+
+        /* 3. Hover State (交互反馈) - Brighter & Solid */
+        ::-webkit-scrollbar-thumb:hover {
+            background: rgba(34, 197, 94, 0.9); /* Solid Neon Green */
+            box-shadow: 0 0 10px rgba(34, 197, 94, 0.5); /* Glow effect */
+            cursor: grab;
+        }
+
+        /* 4. Firefox Compatibility */
+        * {
+            scrollbar-width: thin;
+            scrollbar-color: rgba(34, 197, 94, 0.4) transparent;
+        }
+
+        /* V18.0: Layout Hygiene - Double Scrollbar Prevention */
+        .scrollbar-hide::-webkit-scrollbar {
+            display: none;
+        }
+        .scrollbar-hide {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+
+        /* V18.0: Auto-Hiding Tech - Restore on Hover */
+        /* Mimics tailwind 'hover:scrollbar-default' behavior via raw CSS */
+        .hover\:scrollbar-default:hover::-webkit-scrollbar {
+            display: block;
+        }
+        .hover\:scrollbar-default:hover {
+            -ms-overflow-style: auto;
+            scrollbar-width: thin;
+        }
+
+        /* Legacy No-Scrollbar (Keeping for compatibility) */
+        .no-scrollbar::-webkit-scrollbar { display: none; }
+        .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+
+        /* V2.2: Enhanced Scanlines */
+        .scanlines {
+            background: linear-gradient(
+                to bottom,
+                rgba(255,255,255,0),
+                rgba(255,255,255,0) 50%,
+                rgba(0,0,0,0.5) 50%,
+                rgba(0,0,0,0.5)
+            );
+            background-size: 100% 4px;
+            position: fixed;
+            top: 0; left: 0; right: 0; bottom: 0;
+            z-index: 9999;
+            pointer-events: none;
+            opacity: 0.3; /* Increased visibility */
+        }
+
+        /* V2.2: Vignette Effect */
+        .vignette {
+            position: fixed;
+            top: 0; left: 0; width: 100%; height: 100%;
+            background: radial-gradient(circle, rgba(0,0,0,0) 50%, rgba(0,0,0,0.9) 100%);
+            z-index: 9990;
+            pointer-events: none;
+        }
+
+        /* CRT Flicker */
+        .crt-flicker {
+            animation: flicker 0.15s infinite;
+            pointer-events: none;
+            position: fixed;
+            inset: 0;
+            background: rgba(0, 255, 65, 0.01);
+            z-index: 9998;
+        }
+
+        /* V6.1: Holographic Topology Background */
+        .bg-topology {
+            background-image: 
+                linear-gradient(rgba(0, 255, 65, 0.03) 1px, transparent 1px),
+                linear-gradient(90deg, rgba(0, 255, 65, 0.03) 1px, transparent 1px);
+            background-size: 40px 40px;
+            perspective: 1000px;
+            transform-style: preserve-3d;
+        }
+
+        /* Fluid Typography Utilities */
+        .text-fluid-h1 {
+            font-size: clamp(2.5rem, 5vw + 1rem, 6rem);
+            line-height: 0.85;
+        }
+        .text-fluid-body {
+            font-size: clamp(0.875rem, 1vw + 0.5rem, 1.1rem);
+        }
+        .text-fluid-small {
+            font-size: clamp(0.7rem, 0.8vw, 0.9rem);
+        }
+
+        /* 🖼️ Protocol V20.0: Static Splash Screen (Zero-JS LCP) */
+        #synapse-boot-loader {
+            position: fixed;
+            inset: 0;
+            background: #000;
+            z-index: 10000;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            transition: opacity 0.5s ease-out, visibility 0.5s;
+        }
+        .boot-logo {
+            width: 80px;
+            height: 80px;
+            border: 4px solid rgba(0, 255, 65, 0.3);
+            border-top-color: #00FF41;
+            border-radius: 50%;
+            animation: boot-spin 1s linear infinite;
+            margin-bottom: 20px;
+        }
+        .boot-text {
+            font-family: 'Courier New', monospace;
+            color: #00FF41;
+            font-size: 14px;
+            letter-spacing: 0.3em;
+            font-weight: bold;
+            text-transform: uppercase;
+            animation: boot-pulse 1.5s ease-in-out infinite;
+        }
+        @keyframes boot-spin { 0% { transform: rotate(0deg); } 100% { transform: rotate(360deg); } }
+        @keyframes boot-pulse { 0%, 100% { opacity: 1; } 50% { opacity: 0.5; } }
+        
+        /* Utility to hide loader */
+        .boot-loaded {
+            opacity: 0 !important;
+            visibility: hidden !important;
+            pointer-events: none !important;
+        }
+    </style>
+
+
+</head>
+<body>
+    <!-- 🖼️ Protocol V20.0: Critical Rendering Path Splash Screen -->
+    <div id="synapse-boot-loader">
+        <div class="boot-logo"></div>
+        <div class="boot-text">YouAgent // INITIALIZING</div>
+    </div>
+
+    <div id="root"></div>
+    <div class="scanlines"></div>
+    <div class="vignette"></div>
+    <div class="crt-flicker"></div>
+    <script type="module" src="./index.tsx"></script>
+    
+    <!-- Cloudflare Web Analytics - 🐢 Defer Execution -->
+    <script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "ae5eaff984f949d0a481e273079d0e30"}'></script>
+    <!-- End Cloudflare Web Analytics -->
+</body>
+</html>

@@ -1,0 +1,122 @@
+[
+  {
+    "id": "comfy-ui",
+    "name": "ComfyUI",
+    "slogan": "The most powerful Stable Diffusion GUI.",
+    "description": "A node-based GUI for Stable Diffusion. Allows for complex, modular image generation workflows.",
+    "metrics": { "reasoning": 60, "creativity": 100, "speed": 70 },
+    "stats": { "wins": 2500, "losses": 20, "elo": 2100 },
+    "connectivity": { "try_url": "https://github.com/comfyanonymous/ComfyUI", "iframe_safe": false },
+    "tags": ["NODES", "IMAGE_GEN", "ADVANCED"],
+    "category": "IMAGE_GEN",
+    "video_poster": "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?q=80&w=600&auto=format&fit=crop"
+  },
+  {
+    "id": "sd-webui-a1111",
+    "name": "Automatic1111",
+    "slogan": "The standard SD interface.",
+    "description": "The most widely used web interface for Stable Diffusion. Feature-rich with a massive ecosystem of extensions.",
+    "metrics": { "reasoning": 65, "creativity": 98, "speed": 65 },
+    "stats": { "wins": 5000, "losses": 50, "elo": 2050 },
+    "connectivity": { "try_url": "https://github.com/AUTOMATIC1111/stable-diffusion-webui", "iframe_safe": false },
+    "tags": ["UI", "IMAGE_GEN", "COMMUNITY"],
+    "category": "IMAGE_GEN",
+    "video_poster": "https://images.unsplash.com/photo-1550684848-fac1c5b4e853?q=80&w=600&auto=format&fit=crop"
+  },
+  {
+    "id": "fooocus-img",
+    "name": "Fooocus",
+    "slogan": "Focus on prompting, not tweaking.",
+    "description": "An image generating software that is easy to use and focuses on prompt adherence and quality. Inspired by Midjourney.",
+    "metrics": { "reasoning": 70, "creativity": 95, "speed": 80 },
+    "stats": { "wins": 1200, "losses": 30, "elo": 2000 },
+    "connectivity": { "try_url": "https://github.com/lllyasviel/Fooocus", "iframe_safe": false },
+    "tags": ["EASY", "IMAGE_GEN", "QUALITY"],
+    "category": "IMAGE_GEN",
+    "video_poster": "https://images.unsplash.com/photo-1535016120720-40c6874c3b13?q=80&w=600&auto=format&fit=crop"
+  },
+  {
+    "id": "invoke-ai",
+    "name": "InvokeAI",
+    "slogan": "Professional grade generative AI.",
+    "description": "A creative engine for professionals. Features a unified canvas for infinite outpainting and generation.",
+    "metrics": { "reasoning": 72, "creativity": 96, "speed": 75 },
+    "stats": { "wins": 800, "losses": 25, "elo": 1980 },
+    "connectivity": { "try_url": "https://invoke.com/", "iframe_safe": true },
+    "tags": ["CANVAS", "PROFESSIONAL", "IMAGE_GEN"],
+    "category": "IMAGE_GEN",
+    "video_poster": "https://images.unsplash.com/photo-1502014822147-1aed806137cc?q=80&w=600&auto=format&fit=crop"
+  },
+  {
+    "id": "suno-bark",
+    "name": "Bark",
+    "slogan": "Transformer-based text-to-audio.",
+    "description": "Suno's open-source text-to-audio model. Generates highly realistic, multilingual speech as well as other audio.",
+    "metrics": { "reasoning": 50, "creativity": 92, "speed": 85 },
+    "stats": { "wins": 1500, "losses": 40, "elo": 1900 },
+    "connectivity": { "try_url": "https://github.com/suno-ai/bark", "iframe_safe": false },
+    "tags": ["AUDIO", "TTS", "OPEN_SOURCE"],
+    "category": "VIDEO_GEN",
+    "video_poster": "https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?q=80&w=600&auto=format&fit=crop"
+  },
+  {
+    "id": "audiocraft-meta",
+    "name": "AudioCraft",
+    "slogan": "Meta's library for audio generation.",
+    "description": "A library for audio processing and generation with deep learning. Includes MusicGen and AudioGen.",
+    "metrics": { "reasoning": 60, "creativity": 94, "speed": 80 },
+    "stats": { "wins": 900, "losses": 20, "elo": 1950 },
+    "connectivity": { "try_url": "https://github.com/facebookresearch/audiocraft", "iframe_safe": false },
+    "tags": ["MUSIC", "META", "RESEARCH"],
+    "category": "VIDEO_GEN",
+    "video_poster": "https://images.unsplash.com/photo-1478737270239-2f02b77ac6d5?q=80&w=600&auto=format&fit=crop"
+  },
+  {
+    "id": "open-voice",
+    "name": "OpenVoice",
+    "slogan": "Versatile instant voice cloning.",
+    "description": "Instant voice cloning requiring only a short audio clip. Controls tone, emotion, and accent.",
+    "metrics": { "reasoning": 55, "creativity": 90, "speed": 95 },
+    "stats": { "wins": 700, "losses": 30, "elo": 1920 },
+    "connectivity": { "try_url": "https://research.myshell.ai/open-voice", "iframe_safe": true },
+    "tags": ["VOICE_CLONE", "FAST", "AUDIO"],
+    "category": "VIDEO_GEN",
+    "video_poster": "https://images.unsplash.com/photo-1525362081669-2b4764d5bad3?q=80&w=600&auto=format&fit=crop"
+  },
+  {
+    "id": "cog-video",
+    "name": "CogVideo",
+    "slogan": "Text-to-video generation.",
+    "description": "A large-scale pretrained text-to-video generation model. Part of the CogView family.",
+    "metrics": { "reasoning": 60, "creativity": 88, "speed": 60 },
+    "stats": { "wins": 400, "losses": 50, "elo": 1800 },
+    "connectivity": { "try_url": "https://github.com/THUDM/CogVideo", "iframe_safe": false },
+    "tags": ["VIDEO_GEN", "RESEARCH", "OPEN_SOURCE"],
+    "category": "VIDEO_GEN",
+    "video_poster": "https://images.unsplash.com/photo-1536240478700-b869070f9279?q=80&w=600&auto=format&fit=crop"
+  },
+  {
+    "id": "open-sora",
+    "name": "Open-Sora",
+    "slogan": "Democratizing efficient video production.",
+    "description": "An initiative to create an open-source alternative to OpenAI's Sora. Focuses on high-quality video generation.",
+    "metrics": { "reasoning": 62, "creativity": 90, "speed": 65 },
+    "stats": { "wins": 600, "losses": 40, "elo": 1850 },
+    "connectivity": { "try_url": "https://github.com/hpcaitech/Open-Sora", "iframe_safe": false },
+    "tags": ["VIDEO_GEN", "OPEN_SOURCE", "SORA_ALT"],
+    "category": "VIDEO_GEN",
+    "video_poster": "https://images.unsplash.com/photo-1492691527719-9d1e07e534b4?q=80&w=600&auto=format&fit=crop"
+  },
+  {
+    "id": "animate-anyone",
+    "name": "AnimateAnyone",
+    "slogan": "Consistent character animation.",
+    "description": "Generates character videos from a static image and a pose sequence. Maintains high consistency.",
+    "metrics": { "reasoning": 58, "creativity": 92, "speed": 70 },
+    "stats": { "wins": 500, "losses": 20, "elo": 1900 },
+    "connectivity": { "try_url": "https://github.com/MooreThreads/Moore-AnimateAnyone", "iframe_safe": false },
+    "tags": ["ANIMATION", "CHARACTER", "CONSISTENCY"],
+    "category": "VIDEO_GEN",
+    "video_poster": "https://images.unsplash.com/photo-1534438327276-14e5300c3a48?q=80&w=600&auto=format&fit=crop"
+  }
+]

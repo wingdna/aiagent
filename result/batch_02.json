@@ -1,0 +1,122 @@
+[
+  {
+    "id": "langchain-core",
+    "name": "LangChain",
+    "slogan": "Building context-aware applications.",
+    "description": "The de facto framework for chaining LLMs. Provides distinct modules for prompts, memory, indexes, and agents.",
+    "metrics": { "reasoning": 85, "creativity": 80, "speed": 80 },
+    "stats": { "wins": 5000, "losses": 100, "elo": 2000 },
+    "connectivity": { "try_url": "https://python.langchain.com", "iframe_safe": true },
+    "tags": ["FRAMEWORK", "PYTHON", "JS", "CHAINING"],
+    "category": "CODING",
+    "video_poster": "https://images.unsplash.com/photo-1523961131990-5ea7c61b2107?q=80&w=600&auto=format&fit=crop"
+  },
+  {
+    "id": "autogen-ms",
+    "name": "AutoGen",
+    "slogan": "Enable next-gen LLM applications.",
+    "description": "Microsoft's multi-agent framework. Enables agents to converse with each other to solve tasks requiring collaboration.",
+    "metrics": { "reasoning": 88, "creativity": 85, "speed": 75 },
+    "stats": { "wins": 1200, "losses": 50, "elo": 1950 },
+    "connectivity": { "try_url": "https://microsoft.github.io/autogen/", "iframe_safe": true },
+    "tags": ["MICROSOFT", "MULTI_AGENT", "CONVERSATION"],
+    "category": "ANALYSIS",
+    "video_poster": "https://images.unsplash.com/photo-1519389950473-47ba0277781c?q=80&w=600&auto=format&fit=crop"
+  },
+  {
+    "id": "llama-index",
+    "name": "LlamaIndex",
+    "slogan": "Data framework for LLM applications.",
+    "description": "The ultimate tool for RAG (Retrieval-Augmented Generation). Connects custom data sources to large language models.",
+    "metrics": { "reasoning": 90, "creativity": 70, "speed": 85 },
+    "stats": { "wins": 1500, "losses": 30, "elo": 1980 },
+    "connectivity": { "try_url": "https://www.llamaindex.ai/", "iframe_safe": true },
+    "tags": ["RAG", "DATA", "INDEXING", "PYTHON"],
+    "category": "ANALYSIS",
+    "video_poster": "https://images.unsplash.com/photo-1555949963-ff9fe0c870eb?q=80&w=600&auto=format&fit=crop"
+  },
+  {
+    "id": "flowise-ai",
+    "name": "Flowise",
+    "slogan": "Drag & drop UI to build your customized LLM flow.",
+    "description": "Open source low-code tool for developers to build customized LLM orchestration flows and AI agents.",
+    "metrics": { "reasoning": 80, "creativity": 90, "speed": 70 },
+    "stats": { "wins": 800, "losses": 40, "elo": 1850 },
+    "connectivity": { "try_url": "https://flowiseai.com/", "iframe_safe": true },
+    "tags": ["LOW_CODE", "UI", "BUILDER", "OPEN_SOURCE"],
+    "category": "CODING",
+    "video_poster": "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?q=80&w=600&auto=format&fit=crop"
+  },
+  {
+    "id": "langflow-ui",
+    "name": "LangFlow",
+    "slogan": "The visual IDE for LangChain.",
+    "description": "A UI for LangChain, designed to experiment and prototype flows with drag-and-drop components.",
+    "metrics": { "reasoning": 82, "creativity": 88, "speed": 72 },
+    "stats": { "wins": 750, "losses": 45, "elo": 1840 },
+    "connectivity": { "try_url": "https://www.langflow.org/", "iframe_safe": true },
+    "tags": ["UI", "VISUAL", "PROTOTYPING"],
+    "category": "CODING",
+    "video_poster": "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?q=80&w=600&auto=format&fit=crop"
+  },
+  {
+    "id": "dify-ai",
+    "name": "Dify",
+    "slogan": "One API for plugin-first AI apps.",
+    "description": "An easy-to-use LLMOps platform designed to empower teams to build and operate AI applications.",
+    "metrics": { "reasoning": 85, "creativity": 80, "speed": 85 },
+    "stats": { "wins": 900, "losses": 25, "elo": 1900 },
+    "connectivity": { "try_url": "https://dify.ai/", "iframe_safe": true },
+    "tags": ["LLMOPS", "PLATFORM", "WORKFLOW"],
+    "category": "ANALYSIS",
+    "video_poster": "https://images.unsplash.com/photo-1451187580459-43490279c0fa?q=80&w=600&auto=format&fit=crop"
+  },
+  {
+    "id": "semantic-kernel",
+    "name": "Semantic Kernel",
+    "slogan": "Integrate LLMs with C#, Python, and Java.",
+    "description": "Microsoft's lightweight SDK enabling integration of AI Large Language Models with conventional programming languages.",
+    "metrics": { "reasoning": 87, "creativity": 75, "speed": 90 },
+    "stats": { "wins": 600, "losses": 20, "elo": 1920 },
+    "connectivity": { "try_url": "https://github.com/microsoft/semantic-kernel", "iframe_safe": false },
+    "tags": ["MICROSOFT", "SDK", "ENTERPRISE", "C#"],
+    "category": "CODING",
+    "video_poster": "https://images.unsplash.com/photo-1517694712202-14dd9538aa97?q=80&w=600&auto=format&fit=crop"
+  },
+  {
+    "id": "baby-agi",
+    "name": "BabyAGI",
+    "slogan": "Task-driven autonomous agent.",
+    "description": "A stripped-down version of an autonomous agent. Uses OpenAI and vector databases to create, prioritize, and execute tasks.",
+    "metrics": { "reasoning": 78, "creativity": 70, "speed": 60 },
+    "stats": { "wins": 400, "losses": 100, "elo": 1650 },
+    "connectivity": { "try_url": "https://github.com/yoheinakajima/babyagi", "iframe_safe": false },
+    "tags": ["AUTONOMOUS", "PYTHON", "EXPERIMENTAL"],
+    "category": "SECURITY",
+    "video_poster": "https://images.unsplash.com/photo-1531297461136-82lwDe43k2l?q=80&w=600&auto=format&fit=crop"
+  },
+  {
+    "id": "super-agi",
+    "name": "SuperAGI",
+    "slogan": "Open source autonomous AI framework.",
+    "description": "A more advanced autonomous agent framework designed to be a developer-first open source autonomous AI framework.",
+    "metrics": { "reasoning": 83, "creativity": 75, "speed": 65 },
+    "stats": { "wins": 350, "losses": 80, "elo": 1720 },
+    "connectivity": { "try_url": "https://superagi.com/", "iframe_safe": true },
+    "tags": ["FRAMEWORK", "AUTONOMOUS", "TOOLS"],
+    "category": "SECURITY",
+    "video_poster": "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?q=80&w=600&auto=format&fit=crop"
+  },
+  {
+    "id": "chat-dev",
+    "name": "ChatDev",
+    "slogan": "Communicative agents for software development.",
+    "description": "A virtual software company that operates through various intelligent agents holding different roles.",
+    "metrics": { "reasoning": 86, "creativity": 82, "speed": 60 },
+    "stats": { "wins": 500, "losses": 40, "elo": 1800 },
+    "connectivity": { "try_url": "https://github.com/OpenBMB/ChatDev", "iframe_safe": false },
+    "tags": ["MULTI_AGENT", "SOFTWARE", "SIMULATION"],
+    "category": "CODING",
+    "video_poster": "https://images.unsplash.com/photo-1515879218367-8466d910aaa4?q=80&w=600&auto=format&fit=crop"
+  }
+]

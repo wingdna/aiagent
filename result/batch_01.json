@@ -1,0 +1,262 @@
+[
+  {
+    "id": "gpt-4-omni",
+    "name": "GPT-4 Omni",
+    "slogan": "The multimodal reasoning engine.",
+    "description": "OpenAI's flagship omni-model. Capable of real-time audio, vision, and text reasoning with human-like latency.",
+    "metrics": {
+      "reasoning": 98,
+      "creativity": 88,
+      "speed": 95
+    },
+    "stats": {
+      "wins": 0,
+      "losses": 0,
+      "elo": 2100
+    },
+    "connectivity": {
+      "try_url": "https://chat.openai.com",
+      "iframe_safe": false
+    },
+    "tags": [
+      "MULTIMODAL",
+      "REASONING",
+      "VISION",
+      "AUDIO"
+    ]
+  },
+  {
+    "id": "claude-3-5-sonnet",
+    "name": "Claude 3.5 Sonnet",
+    "slogan": "Intelligence, refined and aligned.",
+    "description": "Anthropic's most balanced model. Sets the industry standard for coding, nuance, and safe output generation.",
+    "metrics": {
+      "reasoning": 99,
+      "creativity": 92,
+      "speed": 90
+    },
+    "stats": {
+      "wins": 0,
+      "losses": 0,
+      "elo": 2080
+    },
+    "connectivity": {
+      "try_url": "https://claude.ai",
+      "iframe_safe": false
+    },
+    "tags": [
+      "CODING",
+      "WRITING",
+      "RESEARCH",
+      "SAFETY"
+    ]
+  },
+  {
+    "id": "gemini-1-5-pro",
+    "name": "Gemini 1.5 Pro",
+    "slogan": "Infinite context. Infinite possibility.",
+    "description": "Google's powerhouse with a massive 2M token context window. Perfect for deep analysis of vast datasets and codebases.",
+    "metrics": {
+      "reasoning": 95,
+      "creativity": 90,
+      "speed": 85
+    },
+    "stats": {
+      "wins": 0,
+      "losses": 0,
+      "elo": 2050
+    },
+    "connectivity": {
+      "try_url": "https://gemini.google.com",
+      "iframe_safe": false
+    },
+    "tags": [
+      "LONG_CONTEXT",
+      "ANALYSIS",
+      "MULTIMODAL",
+      "GOOGLE"
+    ]
+  },
+  {
+    "id": "midjourney-v6",
+    "name": "Midjourney v6",
+    "slogan": "Hallucinate your reality.",
+    "description": "The gold standard for artistic image synthesis. Unmatched texture fidelity, lighting, and stylistic control.",
+    "metrics": {
+      "reasoning": 70,
+      "creativity": 100,
+      "speed": 60
+    },
+    "stats": {
+      "wins": 0,
+      "losses": 0,
+      "elo": 1950
+    },
+    "connectivity": {
+      "try_url": "https://discord.gg/midjourney",
+      "iframe_safe": false
+    },
+    "tags": [
+      "IMAGE_GEN",
+      "ART",
+      "PHOTOREALISM",
+      "DISCORD"
+    ]
+  },
+  {
+    "id": "runway-gen-3",
+    "name": "Runway Gen-3",
+    "slogan": "Directing the latent space.",
+    "description": "High-fidelity video generation model offering precise temporal control and photorealistic motion synthesis.",
+    "metrics": {
+      "reasoning": 65,
+      "creativity": 96,
+      "speed": 75
+    },
+    "stats": {
+      "wins": 0,
+      "losses": 0,
+      "elo": 1920
+    },
+    "connectivity": {
+      "try_url": "https://runwayml.com",
+      "iframe_safe": true
+    },
+    "tags": [
+      "VIDEO_GEN",
+      "CINEMATIC",
+      "MOTION",
+      "VFX"
+    ]
+  },
+  {
+    "id": "auto-gpt-godmode",
+    "name": "AutoGPT",
+    "slogan": "Recursive autonomy engaged.",
+    "description": "An experimental open-source autonomous agent that attempts to achieve goals by chaining thoughts and actions.",
+    "metrics": {
+      "reasoning": 82,
+      "creativity": 75,
+      "speed": 50
+    },
+    "stats": {
+      "wins": 0,
+      "losses": 0,
+      "elo": 1600
+    },
+    "connectivity": {
+      "try_url": "https://news.agpt.co/",
+      "iframe_safe": false
+    },
+    "tags": [
+      "AUTONOMOUS",
+      "AGENT",
+      "PYTHON",
+      "OPEN_SOURCE"
+    ]
+  },
+  {
+    "id": "crew-ai-orch",
+    "name": "CrewAI",
+    "slogan": "Swarm intelligence orchestration.",
+    "description": "Framework for orchestrating role-playing autonomous AI agents. Builds collaborative teams to solve complex tasks.",
+    "metrics": {
+      "reasoning": 88,
+      "creativity": 80,
+      "speed": 70
+    },
+    "stats": {
+      "wins": 0,
+      "losses": 0,
+      "elo": 1750
+    },
+    "connectivity": {
+      "try_url": "https://www.crewai.com",
+      "iframe_safe": true
+    },
+    "tags": [
+      "FRAMEWORK",
+      "ORCHESTRATION",
+      "MULTI_AGENT",
+      "PYTHON"
+    ]
+  },
+  {
+    "id": "metagpt-pro",
+    "name": "MetaGPT",
+    "slogan": "One prompt, one software company.",
+    "description": "Multi-agent framework that assigns roles (Product Manager, Architect, Engineer) to output comprehensive software projects.",
+    "metrics": {
+      "reasoning": 89,
+      "creativity": 78,
+      "speed": 65
+    },
+    "stats": {
+      "wins": 0,
+      "losses": 0,
+      "elo": 1780
+    },
+    "connectivity": {
+      "try_url": "https://github.com/geekan/MetaGPT",
+      "iframe_safe": false
+    },
+    "tags": [
+      "CODING",
+      "SOP",
+      "SOFTWARE_DEV",
+      "AGENTS"
+    ]
+  },
+  {
+    "id": "open-devin-core",
+    "name": "OpenDevin",
+    "slogan": "The open autonomous engineer.",
+    "description": "Community-driven autonomous software engineer. Capable of writing code, running commands, and browsing the web.",
+    "metrics": {
+      "reasoning": 85,
+      "creativity": 80,
+      "speed": 60
+    },
+    "stats": {
+      "wins": 0,
+      "losses": 0,
+      "elo": 1700
+    },
+    "connectivity": {
+      "try_url": "https://github.com/OpenDevin/OpenDevin",
+      "iframe_safe": false
+    },
+    "tags": [
+      "DEV_AGENT",
+      "OPEN_SOURCE",
+      "CODING",
+      "LINUX"
+    ]
+  },
+  {
+    "id": "swe-agent-p",
+    "name": "SWE-agent",
+    "slogan": "Fixing bugs at scale.",
+    "description": "Princeton's software engineering agent. Optimized to autonomously solve GitHub issues with high success rates.",
+    "metrics": {
+      "reasoning": 92,
+      "creativity": 70,
+      "speed": 75
+    },
+    "stats": {
+      "wins": 0,
+      "losses": 0,
+      "elo": 1820
+    },
+    "connectivity": {
+      "try_url": "https://swe-agent.com",
+      "iframe_safe": true
+    },
+    "tags": [
+      "SOFTWARE_ENG",
+      "BUG_FIXING",
+      "GITHUB",
+      "AUTOMATION"
+    ]
+  }
+]
