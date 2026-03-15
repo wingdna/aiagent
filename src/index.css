@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400&family=Orbitron:wght@400;700;900&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-[#050505] text-[#22d3ee] antialiased;
+    margin: 0;
+    scrollbar-gutter: stable;
+    font-family: 'Space Mono', ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  }
+}
+
+/* Custom Utilities from index.html CSS block */
+@layer utilities {
+  .bg-topology {
+    background-image: 
+        linear-gradient(rgba(34, 211, 238, 0.03) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(34, 211, 238, 0.03) 1px, transparent 1px);
+    background-size: 40px 40px;
+    perspective: 1000px;
+    transform-style: preserve-3d;
+  }
+
+  .text-fluid-h1 {
+    font-size: clamp(2.5rem, 5vw + 1rem, 6rem);
+    line-height: 0.85;
+  }
+  .text-fluid-body {
+    font-size: clamp(0.875rem, 1vw + 0.5rem, 1.1rem);
+  }
+  .text-fluid-small {
+    font-size: clamp(0.7rem, 0.8vw, 0.9rem);
+  }
+
+  /* Scrollbar Hacks */
+  .scrollbar-hide::-webkit-scrollbar {
+    display: none;
+  }
+  .scrollbar-hide {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+
+  .custom-scrollbar::-webkit-scrollbar {
+    width: 6px;
+  }
+  .custom-scrollbar::-webkit-scrollbar-track {
+    background: rgba(0, 0, 0, 0.3);
+  }
+  .custom-scrollbar::-webkit-scrollbar-thumb {
+    background: rgba(34, 211, 238, 0.2);
+    border-radius: 3px;
+  }
+  .custom-scrollbar::-webkit-scrollbar-thumb:hover {
+    background: rgba(34, 211, 238, 0.4);
+  }
+}

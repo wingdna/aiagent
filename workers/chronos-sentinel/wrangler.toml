@@ -1,0 +1,16 @@
+name = "chronos-sentinel"
+main = "src/index.ts"
+compatibility_date = "2024-03-20"
+
+# 🛑 ARCHITECTURAL BARRIER: IRON SHIELD PROTOCOL
+# This worker operates independently from the frontend.
+# Do not link this to the main build pipeline.
+
+[triggers]
+crons = ["0 3 * * *"] # Runs daily at 3:00 AM UTC
+
+[vars]
+# Keys must be set via `wrangler secret put` in production
+# SUPABASE_URL = "..."
+# SUPABASE_SERVICE_ROLE_KEY = "..."
+# OPENAI_API_KEY = "..."

@@ -1,0 +1,36 @@
+name: Deploy Chronos Sentinel
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - 'workers/chronos-sentinel/**' # ⚡ 核心：仅监控该目录的变化
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Install Dependencies
+        working-directory: workers/chronos-sentinel
+        run: npm install
+
+      - name: Deploy to Cloudflare Workers
+        uses: cloudflare/wrangler-action@v3
+        with:
+          apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          workingDirectory: 'workers/chronos-sentinel'
+          # 自动注入环境变量到 Worker 的生产环境
+          vars: |
+            SUPABASE_URL=${{ secrets.SUPABASE_URL }}
+            OPENAI_API_KEY=${{ secrets.OPENAI_API_KEY }}
+          secrets: |
+            SUPABASE_SERVICE_ROLE_KEY

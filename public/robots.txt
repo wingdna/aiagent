@@ -1,0 +1,27 @@
+# [YOUAGENT OS 1.0 - SEO OPTIMIZED]
+# 明确授权主流爬虫
+User-agent: Googlebot
+Allow: /
+
+User-agent: GPTBot
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+# 明确阻断垃圾爬虫
+User-agent: Bytespider
+Disallow: /
+
+User-agent: CCBot
+Disallow: /
+
+# 全局权限声明
+User-agent: *
+Allow: /
+Disallow: /api/
+Disallow: /_next/
+Disallow: /private/
