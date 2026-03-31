@@ -1,0 +1,32 @@
+import { type RouteConfig, route, index, layout } from "@react-router/dev/routes";
+
+export default [
+  layout("./routes/layout.tsx", [
+    index("./routes/_index.tsx"),
+    route("agent/:slug", "./routes/agent.$slug.tsx"),
+    route("battle", "./routes/battle.tsx"),
+    route("workflow", "./routes/workflow.tsx"),
+    route("rankings", "./routes/rankings.tsx"),
+    route("directory", "./routes/directory.tsx"),
+    route("blog", "./routes/blog.($slug).tsx"),
+    route("blog/:slug", "./routes/blog.($slug).tsx", { id: "blog-detail" }),
+    route("agent/:slug/lounge", "./routes/agent.$slug_.lounge.tsx"),
+    route("compare/:slugA/vs/:slugB", "./routes/compare.$slugA.vs.$slugB.tsx"),
+    route("terminal", "./routes/terminal.tsx"),
+    route("auth/callback", "./routes/auth.callback.tsx"),
+    route("profile", "./routes/profile.tsx"),
+    route("profile/:id", "./routes/profile.$id.tsx"),
+    route("reviews", "./routes/reviews.tsx"),
+    route("reviews/:slug", "./routes/reviews.tsx", { id: "review-detail" }),
+    route("*", "./routes/$.tsx"),
+  ]),
+  route("api/search-manifest", "./routes/api.search-manifest.ts"),
+  route("api/agents", "./routes/api.agents.tsx"),
+  route("api/agent/:id", "./routes/api.agent.$id.tsx"),
+  route("api/categories", "./routes/api.categories.tsx"),
+  route("api/cli", "./routes/api.cli.ts"),
+  route("sitemap.xml", "./routes/sitemap[.]xml.tsx"),
+  route("sitemap-agents.xml", "./routes/sitemap-agents[.]xml.tsx"),
+  route("sitemap-others.xml", "./routes/sitemap-others[.]xml.tsx"),
+  route("sitemap-:id.xml", "./routes/sitemap-$id[.]xml.tsx"),
+] satisfies RouteConfig;

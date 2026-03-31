@@ -1,0 +1,14 @@
+{
+  "name": "chronos-sentinel",
+  "version": "1.0.0",
+  "description": "Dark Forest Edition: Self-Evolving Agent Tracker",
+  "main": "src/index.ts",
+  "scripts": {
+    "deploy": "wrangler deploy"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "@cloudflare/workers-types": "^4.20240320.0",
+    "typescript": "^5.0.0"
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "name": "YouAgent OS CLI",
+  "version": "1.0.0",
+  "description": "Command Line Interface for YouAgent OS",
+  "commands": [
+    {
+      "name": "go",
+      "description": "Navigate to an agent's page",
+      "usage": "/go <agent_slug>"
+    },
+    {
+      "name": "intel",
+      "description": "View detailed intelligence report for an agent",
+      "usage": "/intel <agent_slug>"
+    },
+    {
+      "name": "find",
+      "description": "Search for agents using parameters",
+      "usage": "/find [--free] [--local] [--top]"
+    },
+    {
+      "name": "lounge",
+      "description": "Enter the lounge for an agent",
+      "usage": "/lounge <agent_slug>"
+    },
+    {
+      "name": "metrics",
+      "description": "View metrics for an agent",
+      "usage": "/metrics <agent_slug>"
+    },
+    {
+      "name": "help",
+      "description": "Show available commands",
+      "usage": "/help"
+    }
+  ]
+}

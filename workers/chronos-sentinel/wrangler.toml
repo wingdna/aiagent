@@ -1,0 +1,17 @@
+name = "youagent-os"
+compatibility_date = "2024-03-14"
+compatibility_flags = ["nodejs_compat"]
+
+# 重要：对于 Pages 项目，主入口通常由框架自动处理，如果你在构建输出中包含 worker，请确保 main 指向正确
+# 如果你使用的是 React Router v7 / Remix 的 cloudflare 适配器，这个 main 通常会被忽略或自动映射
+# 但为了兼容性，保留指向入口点（若存在）
+#main = "build/server/index.js"
+
+# 错误源头：移除 assets = { ... } 这一行，它不支持
+# assets = { directory = "build/client" } 
+
+# 正确的构建输出目录配置
+pages_build_output_dir = "build/client"
+
+[vars]
+BUILD_VERSION = "20260316_v2"

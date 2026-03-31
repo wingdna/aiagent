@@ -1,0 +1,31 @@
+name: Deploy Titanium Relay
+on:
+  push:
+    branches:
+      - main  # 当 main 分支有更新时触发
+    paths:
+      - 'workers/titanium-relay/**' # 只有修改了 Worker 代码时才触发部署，节省资源
+      - 'src/lib/llmo-core/**'      # 核心逻辑库修改时也要重跑部署
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Install Dependencies
+        run: npm install
+
+      - name: Deploy to Cloudflare Workers
+        uses: cloudflare/wrangler-action@v3
+        with:
+          apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          # 指定部署目录
+          workingDirectory: 'workers/titanium-relay'

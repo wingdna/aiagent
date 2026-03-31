@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400&family=Orbitron:wght@400;700;900&display=swap');
+
+/* 确保全局不出现默认滚动条 */
+::-webkit-scrollbar {
+  width: 0px;
+  background: transparent;
+}
+
+/* 为指定的内部容器定制赛博滚动条 */
+.cyber-scroll {
+  overflow-y: auto;
+  scrollbar-width: thin;
+  scrollbar-color: rgba(34, 211, 238, 0.4) transparent;
+}
+
+.cyber-scroll::-webkit-scrollbar {
+  width: 4px;
+}
+.cyber-scroll::-webkit-scrollbar-track {
+  background: rgba(5, 5, 5, 0.4);
+}
+.cyber-scroll::-webkit-scrollbar-thumb {
+  background: rgba(34, 211, 238, 0.3);
+  border-radius: 10px;
+  border: 1px solid rgba(255,255,255,0.02);
+}
+.cyber-scroll::-webkit-scrollbar-thumb:hover {
+  background: rgba(34, 211, 238, 0.5);
+}
+
+html, body {
+  overflow: hidden !important;
+  height: 100vh !important;
+  width: 100vw !important;
+  margin: 0;
+}
+#root {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+/* 只有主内容区域允许滚动 */
+.main-scroll-area {
+  flex: 1;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.terminal-cursor {
+    caret-color: transparent;
+    position: relative;
+}
+.terminal-cursor::after {
+    content: '';
+    display: inline-block;
+    width: 8px;
+    height: 1.2em;
+    background: #22d3ee;
+    vertical-align: middle;
+    margin-left: 2px;
+    animation: blink 1s step-end infinite;
+}
+@keyframes blink {
+    from, to { opacity: 1; }
+    50% { opacity: 0; }
+}
+
+@keyframes scanline {
+  0% { transform: translateY(-100%); }
+  100% { transform: translateY(400%); }
+}
+
+@layer base {
+  body {
+    @apply bg-[#050505] text-[#22d3ee] antialiased;
+    margin: 0;
+    scrollbar-gutter: stable;
+    font-family: 'Space Mono', monospace, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  }
+}
+
+/* Custom Utilities from index.html CSS block */
+@layer utilities {
+  .bg-topology {
+    background-image: 
+        linear-gradient(rgba(34, 211, 238, 0.03) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(34, 211, 238, 0.03) 1px, transparent 1px);
+    background-size: 40px 40px;
+    perspective: 1000px;
+    transform-style: preserve-3d;
+  }
+
+  .text-fluid-h1 {
+    font-size: clamp(2.5rem, 5vw + 1rem, 6rem);
+    line-height: 0.85;
+  }
+  .text-fluid-body {
+    font-size: clamp(0.875rem, 1vw + 0.5rem, 1.1rem);
+  }
+  .text-fluid-small {
+    font-size: clamp(0.7rem, 0.8vw, 0.9rem);
+  }
+
+  /* Scrollbar Hacks */
+  .scrollbar-hide::-webkit-scrollbar {
+    display: none;
+  }
+  .scrollbar-hide {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+
+  .custom-scrollbar::-webkit-scrollbar {
+    width: 6px;
+  }
+  .custom-scrollbar::-webkit-scrollbar-track {
+    background: rgba(0, 0, 0, 0.3);
+  }
+  .custom-scrollbar::-webkit-scrollbar-thumb {
+    background: rgba(34, 211, 238, 0.2);
+    border-radius: 3px;
+  }
+  .custom-scrollbar::-webkit-scrollbar-thumb:hover {
+    background: rgba(34, 211, 238, 0.4);
+  }
+
+  .scroll-container {
+    height: 100vh;
+    overflow-y: auto;
+    overscroll-behavior-y: contain;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .gpu-card {
+    /* 开启原生 DOM 惰性渲染 */
+    content-visibility: auto;
+    /* 给浏览器一个高度预估，防止滚动条抖动 (根据实际卡片高度微调) */
+    contain-intrinsic-size: 320px; 
+    /* 强制开启 GPU 硬件加速层 */
+    transform: translateZ(0);
+    will-change: transform, opacity;
+  }
+
+  .gpu-accelerated {
+    will-change: transform, opacity; /* 告诉浏览器提前分配 GPU 层 */
+    transform: translateZ(0);       /* 强制启用 GPU 加速 */
+    backface-visibility: hidden;    /* 防止边缘闪烁 */
+  }
+
+  /* Markdown Body Styles */
+  .markdown-body h1 { @apply text-3xl font-bold text-white mt-8 mb-4 border-b border-white/10 pb-2; }
+  .markdown-body h2 { @apply text-2xl font-bold text-white mt-8 mb-4 border-b border-white/10 pb-2; }
+  .markdown-body h3 { @apply text-xl font-bold text-cyan-400 mt-6 mb-3; }
+  .markdown-body p { @apply mb-4 leading-relaxed; }
+  .markdown-body ul { @apply list-disc list-inside mb-4 space-y-2; }
+  .markdown-body ol { @apply list-decimal list-inside mb-4 space-y-2; }
+  .markdown-body li { @apply text-gray-300; }
+  .markdown-body blockquote { @apply border-l-4 border-cyan-500/50 pl-4 py-2 bg-white/5 rounded-r-lg italic mb-4 text-gray-400; }
+  .markdown-body code { @apply bg-white/10 px-1.5 py-0.5 rounded font-mono text-cyan-300 text-sm; }
+  .markdown-body pre { @apply bg-black/60 border border-white/10 rounded-xl p-4 mb-4 overflow-x-auto custom-scrollbar; }
+  .markdown-body pre code { @apply bg-transparent p-0 text-gray-300; }
+  .markdown-body a { @apply text-cyan-400 hover:underline transition-all; }
+  .markdown-body table { @apply w-full border-collapse mb-6 bg-white/5 rounded-xl overflow-hidden; }
+  .markdown-body th { @apply bg-white/10 px-4 py-2 text-left text-xs font-mono text-cyan-400 uppercase tracking-widest border border-white/10; }
+  .markdown-body td { @apply px-4 py-2 text-sm border border-white/10 text-gray-300; }
+  .markdown-body strong { @apply text-white font-bold; }
+  .markdown-body em { @apply text-cyan-200/80 italic; }
+}
